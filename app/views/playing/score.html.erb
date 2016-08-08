@@ -1,0 +1,13 @@
+<div class="div-play">
+
+  <h1>Score page</h1>
+  <h3>My proposal <%= @attempt %></h3>
+  <h4><%= @result[:message] %></h4>
+  <h4>Delay time = <%= @result[:time] %></h4>
+  <h4>Translation = <%= @result[:translation] %></h4>
+  <h4>Score = <%= @result[:score] %></h4>
+</div>
+
+<div class="text-center">
+  <%= link_to "New game", "/", class: 'btn btn-primary' %>
+</div>

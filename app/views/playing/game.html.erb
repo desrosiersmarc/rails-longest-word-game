@@ -1,0 +1,25 @@
+<div class='div-play'>
+  <h1>Game Page</h1>
+
+  <h2>Grid</h2>
+
+  <p>
+    <% @letters.each do |letter| %>
+      <%= letter %>
+    <% end %>
+  </p>
+  <form action="/score" method="get">
+    <div class="form-group input-proposal">
+      <label>Write here your proposal :</label>
+      <input type="text" name="proposal" placeholder="your proposal" class="form-control">
+      <input type="hidden" name="start_time" value='<%= @start_time %>' >
+      <input type="hidden" name="grid" value='<%= @letters.join %>' >
+    </div>
+
+      <input type="submit" class="btn btn-success text-center">
+  </form>
+</div>
+
+
+
+
