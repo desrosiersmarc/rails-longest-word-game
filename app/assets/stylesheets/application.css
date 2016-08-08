@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-image: url(https://static.pexels.com/photos/67463/pexels-photo-67463-large.jpeg);
+  background-size: cover;
+  color: #FFF !important;
+}
+
+.input-proposal {
+  width: 500px;
+}
+
+.div-play {
+  margin: auto;
+  width: 500px;
+}
